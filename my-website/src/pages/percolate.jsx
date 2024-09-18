@@ -1,3 +1,11 @@
+import React from "react";
+import Layout from
+  "@theme/Layout";
+
+function About () {
+  return {
+    <Layout title="Percolate">
+      <div style={{ paddng:"20px" }}></div>
 <div style="display: flex; align-items: center;"><a href="https://elanharris.threadless.com/" target="_blank"> <img alt="The Great Wave of Coffee by Elan Harris" height="110" src="https://64.media.tumblr.com/c93ef0f573fc29234de27a59f720ceee/tumblr_inline_sjyzpa09Hz1y28x0k_500.png" width="110" /> </a>
 <h2 style="font-weight: bold; color: #bfa065; font-size: 35px; margin: 0 0 0 15px;">Percolate</h2>
 </div>
@@ -70,6 +78,10 @@
 <tr>
 <td colspan="11" style="height: 5px; background-color: transparent;"></td>
 </tr>
+</Layout>
+  );
+  }
+  export default Percolate;
 </tbody>
 </table>
 <div style="text-align: center; background-color: #bfa065; padding: 0; margin: 0 auto; width: 75%; font-size: 10px;"><a href="https://elanharris.threadless.com/" style="color: black; text-decoration: none;">The Great Wave of Coffee by Artist Elan Harris, Click for more</a></div>
