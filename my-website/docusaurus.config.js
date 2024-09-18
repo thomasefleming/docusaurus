@@ -148,6 +148,16 @@ const config = {
 
 export default {
   themeConfig: {
+    export default {
+  themeConfig: {
+    docs: {
+      versionPersistence: 'localStorage',
+      sidebar: {
+        hideable: false,
+        autoCollapseCategories: false,
+      },
+    },
+  },
     colorMode: {
       defaultMode: 'dark',
       disableSwitch: false,
