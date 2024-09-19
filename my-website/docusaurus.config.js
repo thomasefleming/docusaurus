@@ -41,7 +41,7 @@ const config = {
       ({
 docs: {
   path: 'docs', //this should match your directory structure
-  sidebarPath: require.resolve('./sidebars.js'),
+  sidebarPath: './sidebars.js',
   // Please change this to your repo.
   editUrl: 'https://github.com/thomasefleming/thomasefleming.github.io/edit/main/my-website/',
 },
@@ -54,7 +54,7 @@ docs: {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/thomasefleming/thomasefleming.github.io/edit/main/my-website/',
           // Useful options to enforce blogging best practices
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
@@ -73,9 +73,9 @@ docs: {
       // Replace with your project's social card
       image: 'img/technical-avatar.jpeg',
       navbar: {
-        title: 'My Site',
+        title: 'thomasefleming',
         logo: {
-          alt: 'My Site Logo',
+          alt: 'thomas e fleming',
           src: 'img/fleming-logo.svg',
         },
         items: [
@@ -85,9 +85,9 @@ docs: {
             position: 'left',
             label: 'Getting Started',
           },
-          {to: '/docs', label: 'Documents', position: 'left'},
+          {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/thomasefleming/thomasefleming.github.io/tree/main/my-website/docs',
+            href: 'https://github.com/thomasefleming/thomasefleming.github.io',
             label: 'GitHub',
             position: 'right',
           },
@@ -100,25 +100,25 @@ docs: {
             title: 'Docs',
             items: [
               {
-                label: 'Tutorial',
+                label: 'Tumblr',
                 to: '/docs/intro',
               },
             ],
           },
           {
-            title: 'Community',
+            title: 'Chips and Percolate',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                label: 'Blog',
+                to: '/blog'/
               },
               {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
+                label: 'Tumblr',
+                href: 'https://flemingthomase.tumblr.com',
               },
               {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
+                label: 'Mastodon',
+                href: 'https://mastodon.social/@flemingthomase',
               },
             ],
           },
@@ -131,34 +131,18 @@ docs: {
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'https://github.com/thomasefleming',
               },
             ],
           },
         ],
         copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
       },
-      prism: {
-        theme: prismThemes.github,
-        darkTheme: prismThemes.dracula,
-      },
-    }),
+  prism: {
+      theme: prismThemes.github,
+      darkTheme: prismThemes.dracula,
+    },
+  } satisfies Preset.ThemeConfig,
 };
 
-export default {
-  themeConfig: {
-    docs: {
-      versionPersistence: 'localStorage',
-      sidebar: {
-        hideable: false,
-        autoCollapseCategories: false,
-      },
-    },
-    colorMode: {
-      defaultMode: 'dark',
-      disableSwitch: false,
-      respectPrefersColorScheme: false,
-    },
-  },
-};
-
+export default config;
