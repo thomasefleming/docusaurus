@@ -86,7 +86,7 @@ docs: {
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://thomasefleming.github.io/docusaurus',
+            href: 'https://github.com/thomasefleming/thomasefleming.github.io/tree/main/my-website/blog',
             label: 'GitHub',
             position: 'right',
           },
