@@ -79,14 +79,14 @@ docs: {
         },
         items: [
           {
-            type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
+            type: 'category',
+            sidebarId: 'mysidebar',
             position: 'left',
-            label: 'Tutorial',
+            label: 'Getting Started',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
+          {to: '/docs', label: 'Documents', position: 'left'},
           {
-            href: 'https://github.com/thomasefleming/thomasefleming.github.io/tree/main/my-website/blog',
+            href: 'https://github.com/thomasefleming/thomasefleming.github.io/tree/main/my-website/docs',
             label: 'GitHub',
             position: 'right',
           },
