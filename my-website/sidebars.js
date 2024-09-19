@@ -8,13 +8,10 @@
  *
  * Create as many sidebars as you want.
  */
-
 // @ts-check
 
 /** @type {import('@docusaurus/plugin-content-docs').SidebarsConfig} */
 const sidebars = {
-  
-  // Manually defined sidebar
   mySidebar: [
     {
       type: 'category',
@@ -22,14 +19,10 @@ const sidebars = {
       items: ['doc1', 'doc2'],
     },
   ],
-};
-
-module.exports = sidebars;
-
-
-module.exports = {
   someSidebar: {
     'About Me': ['about'],
     'Contact Me': ['contact'],
   },
 };
+
+module.exports = sidebars;
