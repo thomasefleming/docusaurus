@@ -40,7 +40,7 @@ const sidebars = {
 module.exports = {
   someSidebar: {
     'About Me': ['about'],
-    'Contactus Me': ['contact'],
+    'Contact Me': ['contact'],
   },
 };
     
