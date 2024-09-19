@@ -1,6 +1,6 @@
 ---
-id: doc1
-title: Document 1
+title: Side Bar
+sidebar_label: Getting Started
 ---
 # Document 1
 This is the content of Document 1.
