@@ -42,3 +42,12 @@ export default {
     },
   ],
 };
+module.exports = {
+  mySidebar: [
+    {
+      type: 'category',
+      label: 'Getting Started',
+      items: ['doc1', 'doc2'],
+    },
+  ],
+};
