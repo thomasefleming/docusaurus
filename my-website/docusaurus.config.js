@@ -43,7 +43,6 @@ docs: {
   sidebarPath: require.resolve('./sidebars.js'),
   // Please change this to your repo.
   editUrl: 'https://github.com/thomasefleming/thomasefleming.github.io/edit/main/my-website/',
-  // Remove this to remove the "edit this page" links.
 },
         blog: {
           showReadingTime: true,
