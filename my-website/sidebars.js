@@ -30,4 +30,15 @@ const sidebars = {
    */
 };
 
-export default sidebars;
+export default {
+  tutorialSidebar: [
+    'intro',
+    // highlight-next-line
+    'hello',
+    {
+      type: 'category',
+      label: 'Tutorial',
+      items: ['tutorial-basics/create-a-document'],
+    },
+  ],
+};
