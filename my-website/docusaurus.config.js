@@ -5,6 +5,8 @@
 // See: https://docusaurus.io/docs/api/docusaurus-config
 
 import {themes as prismThemes} from 'prism-react-renderer';
+import type {Config} from '@docusaurus/types';
+import type * as Preset from '@docusaurus/preset-classic';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -40,7 +42,6 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
 docs: {
-  path: 'docs', //this should match your directory structure
   sidebarPath: './sidebars.js',
   // Please change this to your repo.
   editUrl: 'https://github.com/thomasefleming/thomasefleming.github.io/edit/main/my-website/',
@@ -63,13 +64,11 @@ docs: {
         theme: {
           customCss: './src/css/custom.css',
         },
-      }),
+      } satisfies Preset.Options,
     ],
   ],
 
   themeConfig:
-    /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
-    ({
       // Replace with your project's social card
       image: 'img/technical-avatar.jpeg',
       navbar: {
