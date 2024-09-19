@@ -1,8 +1,11 @@
 ---
-id: welcome
-title: Welcome
-description: This is a description for the welcome page
-slug: /welcome
+sidebar_label: 'Hi!'
+sidebar_position: 4
+---
+
+# Hello
+
+This is my **first Docusaurus document**!
 ---
 
 # Welcome to my Doc
