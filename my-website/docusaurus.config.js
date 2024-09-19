@@ -39,13 +39,12 @@ const config = {
       'classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
-        docs: {
-          sidebarPath: './sidebars.js',
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-        },
+docs: {
+  sidebarPath: require.resolve('./sidebars.js'),
+  // Please change this to your repo.
+  editUrl: 'https://github.com/thomasefleming/thomasefleming.github.io/edit/main/my-website/',
+  // Remove this to remove the "edit this page" links.
+},
         blog: {
           showReadingTime: true,
           feedOptions: {
