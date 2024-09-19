@@ -37,8 +37,13 @@ const sidebars = {
   ],
 };
 
-module.exports = sidebars;
-
+module.exports = {
+  someSidebar: {
+    'About Me': ['about'],
+    'Contactus Me': ['contact'],
+  },
+};
+    
 export default {
   tutorialSidebar: [
     'intro',
