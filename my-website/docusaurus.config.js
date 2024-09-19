@@ -146,8 +146,6 @@ docs: {
 
 export default {
   themeConfig: {
-    export default {
-  themeConfig: {
     docs: {
       versionPersistence: 'localStorage',
       sidebar: {
@@ -155,7 +153,6 @@ export default {
         autoCollapseCategories: false,
       },
     },
-  },
     colorMode: {
       defaultMode: 'dark',
       disableSwitch: false,
@@ -163,3 +160,4 @@ export default {
     },
   },
 };
+
