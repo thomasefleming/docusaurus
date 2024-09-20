@@ -6,14 +6,14 @@ body {
 table {
     color: initial; /* This ensures the table's text color remains as defined in the HTML */
     /* Ensure the table scales properly */
-      width: 100%;
-  max-width: 300px; /* Adjust this value as needed */
+      width: 90vw; /* 90% of the viewport width */
+  max-width: 600px; /* Adjust this value as needed */
   margin: auto;
   border-collapse: collapse;
 }
 /* Ensure the image scales properly */
 img {
-  width: 100%;
+    width: 90vw; /* 90% of the viewport width */
   height: auto;
-  max-width: 300px; /* Adjust this value as needed */
+  max-width: 600px; /* Adjust this value as needed */
 }
