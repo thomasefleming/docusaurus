@@ -1,0 +1,8 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+table {
+    color: initial; /* This ensures the table's text color remains as defined in the HTML */
+}
