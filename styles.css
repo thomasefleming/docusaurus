@@ -2,7 +2,16 @@ body {
     background-color: black;
     color: white !important;
 }
-
+/* Container for the table and image */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px; /* Adjust as needed */
+  margin: auto;
+  padding: 20px;
+}
 table {
     color: initial; /* This ensures the table's text color remains as defined in the HTML */
     /* Ensure the table scales properly */
