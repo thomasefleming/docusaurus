@@ -3,18 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My HTML5 Website</title>
+    <title>thomas e fleming | toronto</title>
     <script src="scripts.js" defer></script>
     <style>
         body {
             background-color: black;
             color: white;
             font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
         }
         .container {
             max-width: 850px;
             margin: 0 auto;
             padding: 0 15px;
+        }
+        header h1 {
+            font-size: 18px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
         .header-link {
             color: #00CED1;
@@ -26,7 +34,8 @@
         .bio-container {
             display: flex;
             align-items: flex-start;
-            max-width: 85%;
+            max-width: 100%;
+            margin-bottom: 20px;
         }
         .bio-image {
             width: 100px;
@@ -35,19 +44,20 @@
             flex-shrink: 0;
         }
         .bio-text {
-            font-size: 18px;
+            font-size: 16px;
             padding-left: 10px;
             flex-grow: 1;
             word-wrap: break-word;
+            margin: 0;
         }
         .explore-more {
             color: #00b8ff;
-            font-size: 24px; /* Increased from default size */
-            margin-bottom: 10px; /* Added some space below */
+            font-size: 24px;
+            margin-bottom: 10px;
         }
         .chiclet-container {
             position: relative;
-            width: 85%;
+            width: 100%;
             margin: 15px 0;
         }
         .chiclet-image {
@@ -60,29 +70,40 @@
             top: 0;
             left: 0;
             width: 100%;
-            max-width: 100%;
-            border-collapse: separate;
-            border-spacing: 5px;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .chiclet-row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 5px;
         }
         .chiclet {
             background-color: rgba(255, 75, 133, 0.7);
-            width: 170px;
-            height: 34px;
-            text-align: center;
+            width: 32%;
+            aspect-ratio: 5 / 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
         .chiclet a {
             color: white;
             text-decoration: none;
             font-weight: bold;
-            display: block;
+            text-align: center;
             width: 100%;
             height: 100%;
-            line-height: 34px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
         }
         .attribution {
             text-align: center;
-            margin-top: 5px; /* Reduced from 10px */
-            width: 85%;
+            margin-top: 5px;
+            width: 100%;
         }
         .attribution a {
             color: black;
@@ -90,6 +111,22 @@
             padding: 10px;
             display: inline-block;
             text-decoration: none;
+            font-size: 14px;
+        }
+        
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 16px;
+            }
+            .bio-text {
+                font-size: 14px;
+            }
+            .chiclet a {
+                font-size: 12px;
+            }
+            .attribution a {
+                font-size: 12px;
+            }
         }
     </style>
 </head>
@@ -108,7 +145,6 @@
         </header>
 
         <main>
-            <!-- Bio section -->
             <div class="bio-container">
                 <a href="https://thomasefleming.github.io">
                     <img class="bio-image" alt="Thomas E Fleming" src="https://64.media.tumblr.com/e3d6553da6e67489c7b8bc13dc97631c/tumblr_inline_sjv4oamPwz1y28x0k_500.png">
@@ -118,30 +154,28 @@
                 </p>
             </div>
 
-            <!-- Chiclets section -->
             <p class="explore-more"><b>Explore more</b></p>
             <div class="chiclet-container">
                 <img class="chiclet-image" alt="Clickable Image" src="https://64.media.tumblr.com/e3103ea76b4424d2005d6e93aef75523/tumblr_inline_sj87zmgl5K1y28x0k_500.gif">
-                <table class="chiclet-table">
-                    <tr>
-                        <td class="chiclet"><a href="https://thomasefleming.github.io/placeholder">placeholder</a></td>
-                        <td class="chiclet"><a href="https://flemingthomase.tumblr.com/ai">co-intelligence</a></td>
-                        <td class="chiclet"><a href="https://mastodon.social/@flemingthomase">musings</a></td>
-                    </tr>
-                    <tr>
-                        <td class="chiclet"><a href="https://www.youtube.com/playlist?list=PLnPKoRbj5BWGKs2kXw6ZqlobTlGTMznuz">tunes</a></td>
-                        <td class="chiclet"><a href="https://flemingthomase.tumblr.com/data">data tools</a></td>
-                        <td class="chiclet"><a href="https://docs.google.com/document/d/1diMIH27Nk8A3_l2DAI-cthbjQsFID2jRcSIwVttRM2s/edit?usp=sharing">longer</a></td>
-                    </tr>
-                    <tr>
-                        <td class="chiclet"><a href="https://flemingthomase.tumblr.com/library">membership</a></td>
-                        <td class="chiclet"><a href="https://share.libbyapp.com/title/11062612">cover stories</a></td>
-                        <td class="chiclet"><a href="https://flemingthomase.tumblr.com/index">index</a></td>
-                    </tr>
-                </table>
+                <div class="chiclet-table">
+                    <div class="chiclet-row">
+                        <div class="chiclet"><a href="https://thomasefleming.github.io/placeholder">placeholder</a></div>
+                        <div class="chiclet"><a href="https://flemingthomase.tumblr.com/ai">co-intelligence</a></div>
+                        <div class="chiclet"><a href="https://mastodon.social/@flemingthomase">musings</a></div>
+                    </div>
+                    <div class="chiclet-row">
+                        <div class="chiclet"><a href="https://www.youtube.com/playlist?list=PLnPKoRbj5BWGKs2kXw6ZqlobTlGTMznuz">tunes</a></div>
+                        <div class="chiclet"><a href="https://flemingthomase.tumblr.com/data">data tools</a></div>
+                        <div class="chiclet"><a href="https://docs.google.com/document/d/1diMIH27Nk8A3_l2DAI-cthbjQsFID2jRcSIwVttRM2s/edit?usp=sharing">longer</a></div>
+                    </div>
+                    <div class="chiclet-row">
+                        <div class="chiclet"><a href="https://flemingthomase.tumblr.com/library">membership</a></div>
+                        <div class="chiclet"><a href="https://share.libbyapp.com/title/11062612">cover stories</a></div>
+                        <div class="chiclet"><a href="https://flemingthomase.tumblr.com/index">index</a></div>
+                    </div>
+                </div>
             </div>
 
-            <!-- Attribution -->
             <div class="attribution">
                 <a href="https://xponentialdesign.tumblr.com/post/181995742291/apparatus-eruditionis-ex-color%C3%A6-temere-download">
                     Gif by artist Xponential, Click for more
