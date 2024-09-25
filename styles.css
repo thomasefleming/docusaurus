@@ -87,3 +87,75 @@ header h1 {
   font-weight:bold;
   font-size: 14px;
 }
+/* Fallback color in case the image doesn't load */
+.knits-container {
+  background-color: #f0f0f0;
+}
+@media screen and (max-width: 768px) {
+    .knits-overlay-buttons 
+        flex-direction: column;
+    }
+
+.knits-background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('https://64.media.tumblr.com/e7cfbdf9107010cb605da2b9ff5a2a5b/d79d41863d19c505-8f/s1280x1920/52c874e9b6fa48ff50d98cb1a67e7eef77d166f4.gifv') no-repeat center center;
+  background-size: cover;
+}
+
+.knits-overlay-buttons {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.knits-button {
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.knits-button:hover {
+  transform: scale(1.1);
+}
+
+.knits-button img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+
+.knits-button:hover img {
+  opacity: 1;
+}
+
+/* You can add specific styles for each button if needed */
+.knits-button1 {
+  /* Styles specific to the first knit button */
+}
+
+.knits-button2 {
+  /* Styles specific to the second knit button */
+}
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0);
+  text-align: center;
+  padding: 10px 0;
+}
