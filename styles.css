@@ -1,7 +1,7 @@
 
 :root {
-  --header-link-color: #00CED1;
-  --toronto-text-color: #008B8B;
+  --header-link-color: #00b8ff;
+  --toronto-text-color: #00b8ff;
   --chiclet-bg-color: rgba(255, 75, 133, 0.7);
   --attribution-color: rgba(255, 75, 133, 0.7);
 }
