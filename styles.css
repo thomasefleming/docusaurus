@@ -164,11 +164,3 @@ header h1 {
 .knits-button2 {
   /* Styles specific to the second knit button */
 }
-.footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  background-color: rgba(255, 255, 255, 0);
-  text-align: center;
-  padding: 5px 0;
-}
