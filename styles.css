@@ -40,6 +40,11 @@ header h1 {
   color: black; /* Matches the background color */
   text-decoration: none; /* No underline or visible indicators */
 }
+
+/* chiclet stuff */
+.chiclet-table a {
+  color: black;
+}
 .chiclet-container {
   position: relative;
   width: 100%;
@@ -65,6 +70,12 @@ header h1 {
   width: 200px;
   height: 40px;
   text-align: center;
+  transition: transform 0.3s ease-in-out;
+  border-radius: 10px; /* Added slight rounding to corners */
+}
+.chiclet:hover {
+  transform: scale(1.1);
+  animation: wiggle 0.5s ease-in-out;
 }
 .chiclet a {
   color: white;
@@ -86,19 +97,6 @@ header h1 {
   text-decoration: none;
   font-weight:bold;
   font-size: 14px;
-}
-
-/* Knitting Page Specific Styles */
-
-.knitting-page {
-  background-color: black;
-  color: white;
-  font-family: Arial, sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  flex-direction: column;
 }
 
 /* Container for main content */
