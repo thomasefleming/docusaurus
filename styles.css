@@ -6,6 +6,8 @@
   --attribution-color: rgba(255, 75, 133, 0.7);
 }
 body {
+  opacity: 0; /* Set default opacity to visible to prevent any page display issues with fade-in*/
+  transition: opacity 1.5s ease; /* Ensure there's a transition for smooth fade-in */
   background-color: black;
   color: white;
   font-family: Arial, sans-serif;
