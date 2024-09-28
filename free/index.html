@@ -5,88 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Knitting 🧶</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            background-color: black;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            flex-direction: column;
-        }
-
-        .container {
-            position: relative;
-            width: 100%;
-            max-width: 600px; /* Increased max-width for larger images */
-            height: auto;
-        }
-
-        img {
-            width: 100%;
-            height: auto;
-            object-fit: contain;
-            display: block;
-        }
-
-        .buttons-wrapper {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            gap: 50px; /* Larger gap between buttons */
-        }
-
-        .button {
-            border: none;
-            background: none;
-            cursor: pointer;
-        }
-
-        .button img {
-            width: 300px; /* Increased width for better visibility */
-            max-width: 400px; /* Ensures the buttons don’t get too large */
-            height: auto;
-            display: block;
-            opacity: 0.7; /* Persistent transparency */
-            transition: opacity 0.3s, transform 0.3s;
-        }
-
-        .button:hover img {
-            opacity: 0.5; /* Increase transparency slightly on hover */
-            transform: scale(1.1) rotate(0deg); /* Slightly larger */
-            animation: wiggle 0.5s ease-in-out;
-        }
-
-        @keyframes wiggle {
-            0% { transform: scale(1.1) rotate(0deg); }
-            25% { transform: scale(1.1) rotate(5deg); }
-            50% { transform: scale(1.1) rotate(-5deg); }
-            75% { transform: scale(1.1) rotate(5deg); }
-            100% { transform: scale(1.1) rotate(0deg); }
-        }
-
-        .attribution {
-            margin-top: 20px;
-            color: rgb(9, 172, 3);
-            font-size: 14px;
-            text-align: center;
-        }
-
-        .attribution a {
-            color: rgb(9, 172, 3);
-        }
-    </style>
+    <link rel="stylesheet" href="../styles.css">
 </head>
 
-<body>
+<body class="knitting-page">
     <div class="container">
         <img src="https://64.media.tumblr.com/04cd98db64f42e37d1f18bf3e2935312/dd2c3e983edd2307-46/s500x750/397a52426abf3b1c4422ac980301e7efefc00b2c.gifv" alt="Thomas E Fleming">
         <div class="buttons-wrapper">
