@@ -1,43 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Knitting 🧶</title>
-    <link rel="stylesheet" href="/styles.css">
     <style>
-        /* Your CSS here */
-        .small-square {
-            width: 200px;
-            height: 25px;
-            }
-            .large-square {
-            width: 200px;
-            height: 30px;
-            }
-        
-        .knits-background-image {
-          height: 700px; /* Adjust as needed */
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+
+        .container {
+            position: relative;
+            width: 100%;
+            max-width: 500px; /* Adjust based on your image size */
+            height: auto;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+            display: block;
+        }
+
+        .buttons-wrapper {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 40px; /* Larger gap between buttons */
+        }
+
+        .button {
+            border: none;
+            background: none;
+            cursor: pointer;
+        }
+
+        .button img {
+            width: 200px; /* Increased width for better visibility */
+            max-width: 300px; /* Ensures the buttons don’t get too large */
+            height: auto;
+            display: block;
+            opacity: 0.7; /* Persistent transparency */
+            transition: opacity 0.3s, transform 0.3s;
+        }
+
+        .button:hover img {
+            opacity: 0.5; /* Increase transparency slightly on hover */
+            transform: scale(1.1) rotate(0deg); /* Slightly larger */
+            animation: wiggle 0.5s ease-in-out;
+        }
+
+        @keyframes wiggle {
+            0% { transform: scale(1.1) rotate(0deg); }
+            25% { transform: scale(1.1) rotate(5deg); }
+            50% { transform: scale(1.1) rotate(-5deg); }
+            75% { transform: scale(1.1) rotate(5deg); }
+            100% { transform: scale(1.1) rotate(0deg); }
+        }
+
+        .attribution {
+            margin-top: 20px;
+            color: rgb(9, 172, 3);
+            font-size: 14px;
+            text-align: center;
+        }
+
+        .attribution a {
+            color: rgb(9, 172, 3);
         }
     </style>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/flexibility/2.0.1/flexibility.js"></script>
 </head>
+
 <body>
-    <div>
-        <img src="https://64.media.tumblr.com/04cd98db64f42e37d1f18bf3e2935312/dd2c3e983edd2307-46/s500x750/397a52426abf3b1c4422ac980301e7efefc00b2c.gifv" alt="Background" class="knits-background-image">
-        <div class="knits-overlay-buttons">
-            <div class="large-square"></div>
-            <a href="https://thomasefleming.github.io" class="knits-button knits-button1">
-                <img src="/img/wave-knits.png" alt="Knit Button 1">
-            </a>
-            <a href="/dev/" class="knits-button knits-button2">
-                <img src="/img/dev-knits.png" alt="Knit Button 2">
-            </a>
-            <div class="small-square"></div>
-            <a href="https://www.tumblr.com/pi-slices/714584471255580672/rainbow-tubes-230414" style="color:rgb(9, 172, 3)">
-                <b>Rainbow Tubes animation by Pi-Slices</b>
-            </a>
+    <div class="container">
+        <img src="https://64.media.tumblr.com/04cd98db64f42e37d1f18bf3e2935312/dd2c3e983edd2307-46/s500x750/397a52426abf3b1c4422ac980301e7efefc00b2c.gifv" alt="Thomas E Fleming">
+        <div class="buttons-wrapper">
+            <a href="https://thomasefleming.github.io" class="button"><img src="img/wave-knits.png" alt="Button 1"></a>
+            <a href="https://thomasefleming.github.io/dev" class="button"><img src="img/dev-knits.png" alt="Button 2"></a>
         </div>
     </div>
+    <div class="attribution">
+        <p>Rainbow Tubes animation by Pi-Slices | <a href="https://www.tumblr.com/pi-slices/714584471255580672/rainbow-tubes-230414" target="_blank">View more</a></p>
+    </div>
 </body>
+
 </html>
