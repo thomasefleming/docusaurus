@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
         menu.innerHTML = `
             <a href="ttps://x.com/thomasefleming" target="_blank">My tweets</a>
             <a href="https://docs.google.com/document/d/1Nwq2Z1BhJhYm5UnOundlgRhWmUdy872j7Akp8kfs1q8/edit?usp=sharing" target="_blank">My writing</a>
-            <a href="https://www.youtube.com/playlist?list=PLnPKoRbj5BWEQ5yp09_b9o2ieBrkxFcrH">🎶 I ❤️️</a>
+            <a href="https://www.youtube.com/playlist?list=PLnPKoRbj5BWEQ5yp09_b9o2ieBrkxFcrH">🎶 I 🩷</a>
             <a href="chiclets.html">chiclets</a>
             <a href="https://thomasefleming.github.io/">About me</a>
         `;
