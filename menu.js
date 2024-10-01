@@ -11,8 +11,9 @@ document.addEventListener("DOMContentLoaded", function () {
         const menu = document.createElement('nav');
         menu.className = 'menu-items';
         menu.innerHTML = `
+        <a href="https://thomasefleming.github.io">Home</a>
         <a href="https://www.youtube.com/playlist?list=PLnPKoRbj5BWEQ5yp09_b9o2ieBrkxFcrH" target="_blank" style="text-align: left;">🎶 I 🩷</a>
-        <a href="chiclets.html">chiclets</a>
+        <a href="chiclets.html">Chiclets</a>
         <div class="menu-item" style="position: relative; width: 125px;">
         <button class="sub-menu" style="display: inline-block; width: 125px; background: none; border: none; color: inherit; cursor: pointer; text-align: left; font-size: 1em; padding: 0; margin: 0;">More from me ⟩</button>
         <div class="submenu" style="display: none; position: absolute; left: 100%; top: 0; width: 125px; background-color: rgba(0, 0, 0, 0.9); padding: 10px; border-radius: 5px; z-index: 20;">
