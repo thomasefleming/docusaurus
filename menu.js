@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
         <div class="menu-item" style="position: relative; width: 125px;">
         <button class="sub-menu" style="display: inline-block; width: 125px; background: none; border: none; color: inherit; cursor: pointer; text-align: left; font-size: 1em; padding: 0; margin: 0;">More from me ⟩</button>
         <div class="submenu" style="display: none; position: absolute; left: 100%; top: 0; width: 125px; background-color: rgba(0, 0, 0, 0.9); padding: 10px; border-radius: 5px; z-index: 20;">
-            <a href="ttps://x.com/thomasefleming" target="_blank" class="submenu-item" style="display: block; padding: 10px 0; color: white; text-decoration: none; text-align: left;">My tweets</a>
+            <a href="https://x.com/thomasefleming" target="_blank" class="submenu-item" style="display: block; padding: 10px 0; color: white; text-decoration: none; text-align: left;">My tweets</a>
             <a href="https://docs.google.com/document/d/1Nwq2Z1BhJhYm5UnOundlgRhWmUdy872j7Akp8kfs1q8/edit?usp=sharing" target="_blank" class="submenu-item" style="display: block; padding: 10px 0; color: white; text-decoration: none; text-align: left;">My writing</a>
         </div>
         </div>
