@@ -105,10 +105,35 @@ header h1 {
   margin: 20px 0;
 }
 
+.bio-container {
+  display: flex;
+  align-items: center; /* Align items vertically */
+  background-color: rgba(0, 0, 0, 0.3); /* Set transparent background */
+  padding: 10px;
+  border-radius: 10px; /* Slight rounding to match your preferred style */
+  margin: 10px; /* Add margin to give some spacing around the container */
+}
+
+.bio-image-wrapper,
+.bio-text-wrapper {
+  display: flex;
+  align-items: center; /* Vertically center content */
+}
+
+.bio-image-wrapper {
+  flex: 0 0 auto; /* Image keeps its size */
+}
+
+.bio-text-wrapper {
+  flex: 1; /* Text takes up remaining space */
+  padding-left: 10px;
+}
+
 .bio-image {
   width: 100px;
   height: 100px;
-  object-fit: cover;
+  object-fit: cover; /* Maintain aspect ratio */
+  border-radius: 10px; /* Matching rounding for a consistent style */
 }
 
 .bio-text {
