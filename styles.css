@@ -52,7 +52,7 @@ body {
 }
 
 .hamburger-icon.clicked {
-  color: rgba(86, 241, 255, 0.9)  !important; /* Darken the color slightly */
+  color:  rgba(180, 255, 255, 1) !important; /* Darken the color slightly */
   font-size: 1.1em !important; /* Increase font size slightly */
   font-weight: bold !important; /* Make the text bold when clicked */
 }
@@ -85,7 +85,7 @@ body {
 
 .menu-items a:hover,
 .submenu-item:hover {
-  color: rgba(86, 241, 255, 0.9) !important; /* Change text color when hovered */
+  color: rgba(180, 255, 255, 1)!important; /* Change text color when hovered */
   font-weight: bold; /* Make text bold when hovered */
 }
 
