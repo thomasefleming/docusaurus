@@ -5,53 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>thomas e fleming | toronto</title>
     <script src="scripts.js" defer></script>
+    <script src="menu.js" defer></script> <!-- Include the menu script globally -->
     <link rel="stylesheet" href="styles.css">
-    <style>
-.header-link, .toronto-text {
-color: rgba(105, 105, 105, 0.5); /* Even darker grey */
-font-size: 1em;
-text-shadow: 0 0 8px rgba(105, 105, 105, 0.5);
-}
-
-.header-link-main {
-font-size: 1.2em;
-color: rgba(105, 105, 105, 0.5); /* Default grey */
-transition: color 0.3s ease, text-shadow 0.3s ease;
-}
-
-.header-link-main:hover,
-.header-link-main:focus {
-color: rgba(86, 241, 255, 0.7);
-text-shadow: 0 0 10px rgba(86, 241, 255, 0.7), 0 0 20px rgba(86, 241, 255, 0.7), 0 0 30px rgba(86, 241, 255, 0.7)
-}
-
-.highlight-link {
-color: rgba(86, 241, 255, 0.7);
-text-shadow: 0 0 8px rgba(86, 241, 255, 0.7);
-transition: color 0.3s ease, text-shadow 0.3s ease;
-}
-
-.highlight-link:hover,
-.highlight-link:focus {
-text-shadow: 0 0 10px rgba(86, 241, 255, 0.7), 0 0 20px rgba(86, 241, 255, 0.7), 0 0 30px rgba(86, 241, 255, 0.7);
-}
-</style>
 </head>
 <body>
     <div class="container">
-        <body>
-            <div class="container">
-                <header class="page-header">
-                    <h1 style="display: flex; align-items: center;">
-                        <a href="https://thomasefleming.ca" class="header-link header-link-main">thomas e fleming&nbsp;</a>
-                        <span class="toronto-text">&bull;&nbsp;t&nbsp;</span>
-                        <a href="https://www.tvo.org/" class="header-link highlight-link">o&nbsp;</a>
-                        <span class="toronto-text">r&nbsp;</span>
-                        <a href="https://www.pressreader.com/newspapers/n/toronto-star" class="header-link highlight-link">o&nbsp;</a>
-                        <span class="toronto-text">n&nbsp;t</span>
-                        <a href="https://www.cbc.ca/radioplayer/radio_one_toronto/" class="header-link highlight-link">&nbsp;o</a>
-                    </h1>
-                </header>
+        <header class="page-header">
+            <!-- The JavaScript will dynamically add the hamburger button and menu here -->
+            <h1>
+                <span class="toronto-text">t</span>
+                <a href="https://www.tvo.org/" class="header-link" style="--header-link-color:  #56F1FF;">o</a>
+                <span class="toronto-text">r</span>
+                <a href="https://www.pressreader.com/newspapers/n/toronto-star" class="header-link" style="--header-link-color:  #56F1FF;">o</a>
+                <span class="toronto-text">n t</span>
+                <a href="https://www.cbc.ca/radioplayer/radio_one_toronto/" class="header-link" style="--header-link-color:  #56F1FF;">o</a>
+            </h1>
+        </header>
         <main>
             <!-- Wave Bio section -->
             <!-- Wave Chiclets section -->
