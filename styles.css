@@ -100,10 +100,14 @@ header h1 {
 .header-link {
   color: var(--header-link-color);
   text-decoration: none;
+  font-size: 1.2em; /* Slightly larger for 'thomas e fleming' */
+  vertical-align: middle;
 }
 
 .toronto-text {
   color: var(--toronto-text-color);
+  font-size: 1em; /* Keep 'toronto' slightly smaller */
+  vertical-align: middle;
 }
 
 #greeting {
