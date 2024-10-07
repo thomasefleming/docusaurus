@@ -18,6 +18,6 @@ document.querySelectorAll('.header-link-main, .highlight-link').forEach(function
     el.addEventListener('touchend', function() {
       setTimeout(function() {
         el.classList.remove('highlight-link-active');
-      }, 200);
+      }, 1000); // Highlight lasts for 1 second after click
     });
   });
