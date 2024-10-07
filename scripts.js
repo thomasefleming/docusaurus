@@ -10,3 +10,14 @@ function toggleMenu() {
     const menu = document.querySelector('.menu-items');
     menu.style.display = (menu.style.display === "flex") ? "none" : "flex";
 }
+
+document.querySelectorAll('.header-link-main, .highlight-link').forEach(function(el) {
+    el.addEventListener('touchstart', function() {
+      el.classList.add('highlight-link-active');
+    });
+    el.addEventListener('touchend', function() {
+      setTimeout(function() {
+        el.classList.remove('highlight-link-active');
+      }, 200);
+    });
+  });
