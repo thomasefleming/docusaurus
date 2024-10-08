@@ -104,6 +104,13 @@ header h1 {
   vertical-align: middle;
 }
 
+.glow-initial {
+  color: rgba(86, 241, 255, 0.7);
+  text-shadow: 0 0 10px rgba(86, 241, 255, 0.7), 0 0 20px rgba(86, 241, 255, 0.7), 0 0 30px rgba(86, 241, 255, 0.7);
+  animation: initialGlow 5s forwards;
+}
+
+
 .toronto-text {
   color: var(--toronto-text-color);
   font-size: 1em; /* Keep 'toronto' slightly smaller */
