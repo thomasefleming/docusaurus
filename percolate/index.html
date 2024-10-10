@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>thomas e fleming | toronto</title>
+    <script src="../scripts.js" defer></script>
+    <link rel="stylesheet" href="../styles.css">
+    <style>
+        .chiclet-table a {
+            color: black;
+        }
+        .highlight-link {
+            color: rgba(0, 255, 0, 0.7);
+            text-shadow: 0 0 8px rgba(0, 255, 0, 0.7);
+            transition: color 0.3s ease, text-shadow 0.3s ease;
+        }
+        .header-link, .toronto-text {
+            color: rgba(105, 105, 105, 0.5);
+            font-size: 1em;
+            text-shadow: 0 0 8px rgba(105, 105, 105, 0.5);
+        }
+        .header-link-main {
+            font-size: 1.2em;
+            color: rgba(105, 105, 105, 0.5);
+            transition: color 0.3s ease, text-shadow 0.3s ease;
+        }
+        .header-link-main:hover,
+        .header-link-main:focus {
+            color: rgba(0, 255, 0, 0.7);
+            text-shadow: 0 0 10px rgba(0, 255, 0, 0.7), 0 0 20px rgba(0, 255, 0, 0.7), 0 0 30px rgba(3, 3, 3, 0.7);
+        }
+        .highlight-link:hover,
+        .highlight-link:focus {
+            text-shadow: 0 0 10px rgba(0, 255, 0, 0.7), 0 0 20px rgba(0, 255, 0, 0.7), 0 0 30px rgba(0, 255, 0, 0.7);
+        }
+        .glow-initial {
+            color: rgba(0, 255, 0, 0.7);
+            text-shadow: 0 0 10px rgba(0, 255, 0, 0.7), 0 0 20px rgba(0, 255, 0, 0.7), 0 0 30px rgba(0, 255, 0, 0.7);
+            animation: initialGlow 5s forwards;
+        }
+        @keyframes initialGlow {
+            0%, 80% {
+                color: rgba(0, 255, 0, 0.7);
+                text-shadow: 0 0 10px rgba(0, 255, 0, 0.7), 0 0 20px rgba(0, 255, 0, 0.7), 0 0 30px rgba(0, 255, 0, 0.7);
+            }
+            100% {
+                color: rgba(105, 105, 105, 0.5);
+                text-shadow: none;
+            }
+        }
+        .highlight-link {
+            animation: torontoGlow 7s forwards;
+        }
+        @keyframes torontoGlow {
+            0%, 60% {
+                color: rgba(105, 105, 105, 0.5);
+                text-shadow: none;
+            }
+            80%, 100% {
+                color: rgba(0, 255, 0, 0.7);
+                text-shadow: 0 0 10px rgba(0, 255, 0, 0.7), 0 0 20px rgba(0, 255, 0, 0.7), 0 0 30px rgba(0, 255, 0, 0.7);
+            }
+        }
+        .glow-o, .glow-percolate {
+        color: rgba(191, 160, 101, 1) !important;
+        text-shadow: 0 0 5px rgba(191, 160, 101, 0.7),
+                     0 0 10px rgba(191, 160, 101, 0.7),
+                     0 0 15px rgba(191, 160, 101, 0.7),
+                     0 0 20px rgba(191, 160, 101, 0.7) !important;
+        transition: all 0.3s ease;
+        animation: none !important;
+    }
+    .glow-o:hover, .glow-percolate:hover {
+        color: rgba(191, 160, 101, 1) !important;
+        text-shadow: 0 0 10px rgba(191, 160, 101, 0.9),
+                     0 0 20px rgba(191, 160, 101, 0.9),
+                     0 0 30px rgba(191, 160, 101, 0.9),
+                     0 0 40px rgba(191, 160, 101, 0.9) !important;
+    }
+
+    /* Add a subtle animation to enhance the glow effect */
+    @keyframes subtleGlow {
+        0%, 100% {
+            text-shadow: 0 0 5px rgba(191, 160, 101, 0.7),
+                         0 0 10px rgba(191, 160, 101, 0.7),
+                         0 0 15px rgba(191, 160, 101, 0.7),
+                         0 0 20px rgba(191, 160, 101, 0.7);
+        }
+        50% {
+            text-shadow: 0 0 10px rgba(191, 160, 101, 0.9),
+                         0 0 20px rgba(191, 160, 101, 0.9),
+                         0 0 30px rgba(191, 160, 101, 0.9),
+                         0 0 40px rgba(191, 160, 101, 0.9);
+        }
+    }
+
+    .glow-o, .glow-percolate {
+        animation: subtleGlow 2s ease-in-out infinite !important;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+    </head>
+    <body>
+        <div class="container">
+            <body>
+                <div class="container">
+                    <header class="page-header">
+                        <h1 style="display: flex; align-items: center;">
+                            <a href="https://thomasefleming.ca" class="header-link header-link-main glow-initial">thomas e fleming&nbsp;</a>
+                            <a href="https://www.tvo.org/" class="header-link highlight-link glow-o">o&nbsp;</a>
+                            <a href="https://www.pressreader.com/newspapers/n/toronto-star" class="header-link highlight-link">o&nbsp;</a>
+
+                            <a href="https://www.cbc.ca/radioplayer/radio_one_toronto/" class="header-link highlight-link">o</a>
+                            <a href="/nav/percolate/" class="header-link highlight-link glow-percolate">&nbsp;p e r c o l a t e&nbsp;</a>
+                        </h1>
+                        </h1>
+                    </header>
+        <header class="page-header">
+            <!-- The JavaScript will dynamically add the hamburger button and menu here -->
+            <h1>
+               
+        </header>
+        <main> 
+            <!-- Wave Chiclets section -->
+            <div class="chiclet-container" style="--chiclet-bg-color: rgba(191, 160, 101, 0.7)
+;">
+                <!-- Insert link for animated gif beneath chiclets table -->
+                <img class="chiclet-image" alt="Clickable Image" src="https://64.media.tumblr.com/3db23e5ab92412b503a175f63e37de1a/tumblr_inline_sjyza822Yn1y28x0k_500.gif">
+                <table class="chiclet-table">
+                    <tr>
+                        <td class="chiclet"><a href="/nav/placeholder.html">Africa</a></td>
+                        <td class="chiclet"><a href="/nav/placeholder.html">Antarctica</a></td>
+                        <td class="chiclet"><a href="/nav/placeholder.html">Asia</a></td>
+                    </tr>
+                    <tr>
+                        <td class="chiclet"><a href="/nav/placeholder.html">Europe</a></td>
+                        <td class="chiclet"><a href="/nav/placeholder.html">North America</a></td>
+                        <td class="chiclet"><a href="/nav/placeholder.html">Oceania</a></td>
+                    </tr>
+                    <tr>
+                        <td class="chiclet"><a href="/nav/placeholder.html">South America</a></td>
+                        <td class="chiclet"><a href="/nav/placeholder.html">China</a></td>
+                        <td class="chiclet"><a href="/nav/placeholder.html">United States</a></td>
+                    </tr>
+                </table>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
