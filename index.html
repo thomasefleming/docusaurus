@@ -1,57 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>thomas e fleming | toronto</title>
+    <title>thomas e fleming | dev</title>
     <script src="scripts.js" defer></script>
     <link rel="stylesheet" href="styles.css">
-    
     <style>
-.header-link, .toronto-text {
-color: rgba(105, 105, 105, 0.5); /* Even darker grey */
-font-size: 1em;
-text-shadow: 0 0 8px rgba(105, 105, 105, 0.5);
-}
+        .chiclet-container {
+            position: relative;
+            width: 100%;
+            margin-top: 15px;
+    
+        }
+        .chiclet-image {
+            width: 100%;
+            height: auto;
+            max-width: 100%;
+            display: block;
+            border-radius: 10px;
+        }
+        .attribution-container {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 0;
+            text-align: center;
+        }
+        .attribution-container p {
+            margin: 0;
+            color: white;
+            font-size: 9px;
+        }
+        .attribution-container a {
+            color: rgba(0, 255, 0, 0.7);
+            text-decoration: none;
+        }
+        .iframe-container {
+            width: 100%;
+            margin: 10px 0;
+        }
+        .embedded-iframe {
+            width: 100%;
+            height: 80vh;
+            border: none;
+        }
 
-.header-link-main {
-font-size: 1.2em;
-color: rgba(105, 105, 105, 0.5); /* Default grey */
-transition: color 0.3s ease, text-shadow 0.3s ease;
-}
+        .blog-iframe {
+            width: 100%;
+            height: 100vh;
+            border: none;
+            padding: 0; /* Ensure there is no internal padding */
+            margin: 0; /* Remove margin to ensure the iframe takes up the full width of its container */
+        }
+        .header-link, .toronto-text {
+        color: rgba(105, 105, 105, 0.5); /* Even darker grey */
+        font-size: 1em;
+        text-shadow: 0 0 8px rgba(105, 105, 105, 0.5);
+    }
 
-.header-link-main:hover,
-.header-link-main:focus {
-color: rgba(86, 241, 255, 0.7);
-text-shadow: 0 0 10px rgba(86, 241, 255, 0.7), 0 0 20px rgba(86, 241, 255, 0.7), 0 0 30px rgba(86, 241, 255, 0.7)
-}
+    .header-link-main {
+        font-size: 1.2em;
+        color: rgba(105, 105, 105, 0.5); /* Default grey */
+        transition: color 0.3s ease, text-shadow 0.3s ease;
+    }
 
-.highlight-link {
-color: rgba(86, 241, 255, 0.7);
-text-shadow: 0 0 8px rgba(86, 241, 255, 0.7);
-transition: color 0.3s ease, text-shadow 0.3s ease;
-}
+    .header-link-main:hover,
+    .header-link-main:focus {
+        color: rgba(0, 255, 0, 0.7);
+        text-shadow: 0 0 10px rgba(0, 255, 0, 0.7), 0 0 20px rgba(0, 255, 0, 0.7), 0 0 30px rgba(3, 3, 3, 0.7);
+    }
 
-.highlight-link-active {
-  color: rgba(86, 241, 255, 0.7);
-  text-shadow: 0 0 10px rgba(86, 241, 255, 0.7), 0 0 20px rgba(86, 241, 255, 0.7), 0 0 30px rgba(3, 3, 3, 0.7);
-}
 
-.highlight-link:hover,
-.highlight-link:focus {
-text-shadow: 0 0 10px rgba(86, 241, 255, 0.7), 0 0 20px rgba(86, 241, 255, 0.7), 0 0 30px rgba(86, 241, 255, 0.7);
-}
+
+    .highlight-link {
+        color: rgba(0, 255, 0, 0.7);
+        text-shadow: 0 0 8px rgba(0, 255, 0, 0.7);
+        transition: color 0.3s ease, text-shadow 0.3s ease;
+    }
+
+    .highlight-link:hover,
+    .highlight-link:focus {
+        text-shadow: 0 0 10px rgba(0, 255, 0, 0.7), 0 0 20px rgba(0, 255, 0, 0.7), 0 0 30px rgba(0, 255, 0, 0.7);
+    }
 
 .glow-initial {
-  color: rgba(86, 241, 255, 0.7);
-  text-shadow: 0 0 10px rgba(86, 241, 255, 0.7), 0 0 20px rgba(86, 241, 255, 0.7), 0 0 30px rgba(86, 241, 255, 0.7);
+  color: rgba(0, 255, 0, 0.7);
+  text-shadow: 0 0 10px rgba(0, 255, 0, 0.7), 0 0 20px rgba(0, 255, 0, 0.7), 0 0 30px rgba(0, 255, 0, 0.7);
   animation: initialGlow 5s forwards;
 }
 
 @keyframes initialGlow {
   0%, 80% {
-    color: rgba(86, 241, 255, 0.7);
-    text-shadow: 0 0 10px rgba(86, 241, 255, 0.7), 0 0 20px rgba(86, 241, 255, 0.7), 0 0 30px rgba(86, 241, 255, 0.7);
+    color: rgba(0, 255, 0, 0.7);
+    text-shadow: 0 0 10px rgba(0, 255, 0, 0.7), 0 0 20px rgba(0, 255, 0, 0.7), 0 0 30px rgba(0, 255, 0, 0.7);
   }
   100% {
     color: rgba(105, 105, 105, 0.5);
@@ -69,60 +115,52 @@ text-shadow: 0 0 10px rgba(86, 241, 255, 0.7), 0 0 20px rgba(86, 241, 255, 0.7),
     text-shadow: none;
   }
   80%, 100% {
-    color: rgba(86, 241, 255, 0.7);
-    text-shadow: 0 0 10px rgba(86, 241, 255, 0.7), 0 0 20px rgba(86, 241, 255, 0.7), 0 0 30px rgba(86, 241, 255, 0.7);
+    color: rgba(0, 255, 0, 0.7);
+    text-shadow: 0 0 10px rgba(0, 255, 0, 0.7), 0 0 20px rgba(0, 255, 0, 0.7), 0 0 30px rgba(0, 255, 0, 0.7);
   }
 }
-</style>
+    </style>
+    
 </head>
+
 <body>
     <div class="container">
-        <body>
-            <div class="container">
-                <header class="page-header">
-                    <h1 style="display: flex; align-items: center;">
-                        <a href="https://thomasefleming.ca" class="header-link header-link-main glow-initial">thomas e fleming&nbsp;</a>
-                        <span class="toronto-text">&bull;&nbsp;t&nbsp;</span>
-                        <a href="https://www.tvo.org/" class="header-link highlight-link" id="toronto-o-1">o&nbsp;</a>
-                        <span class="toronto-text">r&nbsp;</span>
-                        <a href="https://www.pressreader.com/newspapers/n/toronto-star id=" class="header-link highlight-link" id="toronto-o-2">o&nbsp;</a>
-                        <span class="toronto-text">n&nbsp;t</span>
-                        <a href="https://www.cbc.ca/radioplayer/radio_one_toronto/" class="header-link highlight-link">&nbsp;o</a>
-                    </h1>
-                </header>
+        <header class="page-header">
+            <h1>
+                <a href="http://thomasefleming.ca/dev" class="header-link header-link-main glow-initial" id="main-name">thomas e fleming</a>
+                <span class="toronto-text">• t</span>
+                <a href="https://thomasefleming.github.io/placeholder" class="header-link highlight-link" id="toronto-o-1">o</a>
+                <span class="toronto-text">r</span>
+                <a href="nav/Toronto-Animation.html" class="header-link highlight-link" id="toronto-o-2">o</a>
+                <span class="toronto-text">n&nbsp;t</span>
+                <a href="nav/CN-Tower.html" class="header-link highlight-link">o</a>
+            </h1>
+        </header>
+    
         <main>
-            <!-- Wave Bio section -->
-            <!-- Wave Chiclets section -->
-                <div class="chiclet-container" style="--chiclet-bg-color: rgba(0, 255, 0, 0.7);">
-                    <!-- Insert link for animated gif beneath chiclets table -->
-                    <img class="chiclet-image" alt="Clickable" src="img/mov/Pixel-Waves-Home.gif">
-                    <table class="chiclet-table">
-                        <tr>
-                            <td>
-                                <div class="bio-container">
-                                <!--Create image view file to allow clickable larger view of image-->
+            <div class="chiclet-container" style="--chiclet-bg-color: rgba(0, 255, 0, 0.7);">
+                <img class="chiclet-image" alt="Clickable Image" src="img/mov/NeuralNet-Xponential.gif">
+                <div class="attribution-container">
+                    <p>Neural net animation by Xponential · <a href="https://youtube.com/@xponentialdesign?si=yxkIguhRu5ba_PeF" target="_blank">View more</a></p>
+                </div>
+                <table class="chiclet-table">
+                    <tr>
+                        <td>
+                            <div class="bio-container">
                                 <a href="img/view/profile-image-display.html">
                                     <img class="bio-image" alt="Thomas E Fleming" src="img/profile-image.png">
                                 </a>
                                 <div class="bio-text">
-                                    <b>
-                                        I've got a 
-                                        <a href="http://thomasefleming.ca/dev" class="hidden-link">🩷</a> for tech, music, writing, books, films, series, art, natural philosophy, and my husband.
-                                    </b>
+                                    <b>I've got a <a href="https://thomasefleming.ca" class="hidden-link">💚</a> for tech, music, writing, books, films, series, art, natural philosophy, coding, data, design and my husband.</b>
                                 </div>
-                                </td>
-                        </tr>
+                            </div>
+                        </td>
+                    </tr>
                 </table>
             </div>
-            <!-- Attribution -->
-            <div class="attribution" style=" color: white">
-                <div class="attribution-container">
-                    <div class="attribution">
-                        <p>Pixel Waves by Pi-Slices · <a
-                                href="https://pislices.art"
-                                target="_blank" style=" color: #56F1FF">View more</a></p>
-                    </div>
-                </div>
+            <div class="iframe-container">
+                <iframe src="iframes/blog.html" class="blog-iframe"></iframe>
+            </div>
         </main>
     </div>
 </body>

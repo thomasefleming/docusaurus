@@ -146,8 +146,9 @@ header h1 {
 }
 
 .bio-image {
-  width: 100px;
-  height: 100px;
+  width: auto;
+  height: 120px;
+  aspect-ratio: 3/4;
   object-fit: cover; /* Maintain aspect ratio */
   border-radius: 10px; /* Matching rounding for a consistent style */
 }
