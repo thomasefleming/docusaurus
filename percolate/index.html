@@ -98,11 +98,35 @@
     .glow-o, .glow-percolate {
         animation: subtleGlow 2s ease-in-out infinite !important;
     }
+
+    /* New media query for mobile devices */
+    @media screen and (max-width: 768px) {
+        .header-link-main {
+            font-size: 0.6em; /* Half the original size */
+        }
+        
+        /* Adjust other header elements if needed */
+        .header-link, .toronto-text {
+            font-size: 0.8em;
+        }
+        
+        /* Ensure the header stays on one line */
+        .page-header h1 {
+            flex-wrap: nowrap;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+            scrollbar-width: none; /* Firefox */
+            -ms-overflow-style: none;  /* Internet Explorer 10+ */
+        }
+        
+        /* Hide scrollbar for Chrome, Safari and Opera */
+        .page-header h1::-webkit-scrollbar {
+            display: none;
+        }
+    }
     </style>
 </head>
 <body>
-    <div class="container">
-    </head>
     <body>
         <div class="container">
             <body>
@@ -110,12 +134,11 @@
                     <header class="page-header">
                         <h1 style="display: flex; align-items: center;">
                             <a href="https://thomasefleming.ca" class="header-link header-link-main glow-initial">thomas e fleming&nbsp;</a>
-                            <a href="https://www.tvo.org/" class="header-link highlight-link glow-o">o&nbsp;</a>
+                            <a href="../percolate/" class="header-link highlight-link glow-o">o&nbsp;</a>
                             <a href="https://www.pressreader.com/newspapers/n/toronto-star" class="header-link highlight-link">o&nbsp;</a>
 
                             <a href="https://www.cbc.ca/radioplayer/radio_one_toronto/" class="header-link highlight-link">o</a>
                             <a href="/nav/percolate/" class="header-link highlight-link glow-percolate">&nbsp;p e r c o l a t e&nbsp;</a>
-                        </h1>
                         </h1>
                     </header>
         <header class="page-header">
